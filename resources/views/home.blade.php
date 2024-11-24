@@ -1,35 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Shoesstore</title>
-    <link href="/css/tailwind.css" rel="stylesheet">
-</head>
-
-<body>
-    <nav
-        class="border-solid border-2 border-gray-200 h-20 shadow-md bg-gray-100 m-0 p-0 flex items-center justify-between">
-        <div class="text-2xl flex flex-grow justify-center">
-            <a href=""
-                class="px-10 not-italic hover:bg-black hover:text-white hover:h-10  transition-colors duration-300 rounded-md ">Home</a>
-            <a href=""
-                class="px-10 hover:bg-black hover:text-white hover:h-10  transition-colors duration-300 rounded-md">About</a>
-            <a href=""
-                class="px-10 hover:bg-black hover:text-white hover:h-10  transition-colors duration-300 rounded-md">Contact
-                us</a>
-            <a href=""
-                class="px-10 hover:bg-black hover:text-white hover:h-10  transition-colors duration-300 rounded-md">Shoes</a>
-        </div>
-        <div class="flex text-2xl space-x-4 mr-10">
-            <a href=""
-                class=" hover:bg-black hover:px-10 hover:text-white hover:h-10  transition-colors duration-300 rounded-md">Login</a>
-            <a href=""
-                class=" hover:bg-black hover:px-10 hover:text-white hover:h-10  transition-colors duration-300 rounded-md">Register</a>
-        </div>
-    </nav>
+@extends('Layouts.main')
+@push('title')
+    <title>Home</title>
+@endpush
+@section('main-section')
     <section class="text-gray-600 body-font ">
         <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
             <div
@@ -165,90 +138,4 @@
         </div>
     </section>
 
-    <footer class="text-gray-600 body-font border-t-2 border-gray-500">
-        <div
-            class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-
-            <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
-                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-                    <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Resources</h2>
-                    <nav class="list-none mb-10">
-                        <li>
-                            <a class="text-gray-600 hover:text-gray-800">Gift Cards</a>
-                        </li>
-                        <li>
-                            <a class="text-gray-600 hover:text-gray-800">Find a Store</a>
-                        </li>
-                        <li>
-                            <a class="text-gray-600 hover:text-gray-800">Membership</a>
-                        </li>
-                        <li>
-                            <a class="text-gray-600 hover:text-gray-800">Nike Journal</a>
-                        </li>
-                    </nav>
-                </div>
-                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-                    <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Help</h2>
-                    <nav class="list-none mb-10">
-                        <li>
-                            <a class="text-gray-600 hover:text-gray-800"> Get Help
-                            </a>
-                        </li>
-                        <li>
-                            <a class="text-gray-600 hover:text-gray-800"> Order Status
-                            </a>
-                        </li>
-                        <li>
-                            <a class="text-gray-600 hover:text-gray-800"> Returns</a>
-                        </li>
-                        <li>
-                            <a class="text-gray-600 hover:text-gray-800"> Order Cancellation</a>
-                        </li>
-                    </nav>
-                </div>
-                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-                    <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Promotions & Discounts
-
-                    </h2>
-                    <nav class="list-none mb-10">
-                        <li>
-                            <a class="text-gray-600 hover:text-gray-800"> Student
-                            </a>
-                        </li>
-                        <li>
-                            <a class="text-gray-600 hover:text-gray-800">Military</a>
-                        </li>
-                        <li>
-                            <a class="text-gray-600 hover:text-gray-800">Teacher</a>
-                        </li>
-                        <li>
-                            <a class="text-gray-600 hover:text-gray-800"> First Responders & Medical Professionals</a>
-                        </li>
-                    </nav>
-                </div>
-                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-                    <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Company</h2>
-                    <nav class="list-none mb-10">
-                        <li>
-                            <a class="text-gray-600 hover:text-gray-800"> About Nike
-                            </a>
-                        </li>
-                        <li>
-                            <a class="text-gray-600 hover:text-gray-800"> News
-                            </a>
-                        </li>
-                        <li>
-                            <a class="text-gray-600 hover:text-gray-800">Careers</a>
-                        </li>
-                        <li>
-                            <a class="text-gray-600 hover:text-gray-800">Investors</a>
-                        </li>
-                    </nav>
-                </div>
-            </div>
-        </div>
-
-    </footer>
-</body>
-
-</html>
+@endsection
