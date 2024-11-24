@@ -24,9 +24,9 @@
                 class="px-10 hover:bg-black hover:text-white hover:h-10  transition-colors duration-300 rounded-md">Shoes</a>
         </div>
         <div class="flex text-2xl space-x-4 mr-10">
-            <a href=""
+            <a href="{{ url('/login') }}"
                 class=" hover:bg-black hover:px-10 hover:text-white hover:h-10  transition-colors duration-300 rounded-md">Login</a>
-            <a href=""
+            <a href="{{ url('/register') }}"
                 class=" hover:bg-black hover:px-10 hover:text-white hover:h-10  transition-colors duration-300 rounded-md">Register</a>
         </div>
     </nav>
