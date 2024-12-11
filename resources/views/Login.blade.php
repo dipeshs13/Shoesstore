@@ -4,13 +4,30 @@
 @endpush
 
 <div class="flex min-h-screen items-center justify-center px-6 py-10 lg:px-8 ">
+    <div class="mt-5">
+        @if($errors->any())
+            <div class="col-12">
+                @foreach ($errors->all() as $error)
+                    <div class="alert alert-danger">{{$error}}</div>
+                @endforeach
+            </div>
+        @endif
+
+        @if(session()->has('error'))
+            <div class="alert alert-danger">{{session('error')}}</div>
+        @endif
+        @if(session()->has('success'))
+            <div class="alert alert-success">{{session('success')}}</div>
+        @endif
+    </div>
     <div class="w-full max-w-sm">
         {{-- <img class="mx-auto h-10 w-auto" src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600" alt="Your Company"> --}}
         <h2 class="text-center text-2xl font-bold tracking-tight text-gray-900">Sign in to your account</h2>
     </div>
 
     <div class="w-full max-w-sm">
-        <form class="space-y-6" action="#" method="POST">
+        <form class="space-y-6" action="{{route('login.post')}}" method="POST">
+            @csrf
             <div>
                 <label for="email" class="block text-sm font-medium text-gray-900">Email address</label>
                 <div class="mt-2">

@@ -14,9 +14,9 @@
                     premium comfort, and a bold statement with every step. From the court to the streets, these kicks
                     redefine your game—making every move count.</p>
                 <div class="flex justify-center">
-                    <button
-                        class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Buy
-                        Now</button>
+                    <a href="{{route('Shoes')}}"
+                            class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Buy
+                            Now</a>
 
                 </div>
             </div>
@@ -80,9 +80,13 @@
                         <p class="mt-1">Rs 8000</p>
                     </div>
                     <div>
-                        <button
+                        @if(auth()->check())
+                        <a href="{{route('Order')}}"
                             class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Buy
-                            Now</button>
+                            Now</a>
+                            @else
+                            <span>Please login to buy</span>
+                            @endif
                     </div>
                 </div>
                 <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
@@ -96,9 +100,13 @@
                         <p class="mt-1">Rs 6000</p>
                     </div>
                     <div>
-                        <button
+                        @if(auth()->check())
+                        <a href="{{route('Order')}}"
                             class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Buy
-                            Now</button>
+                            Now</a>
+                            @else
+                            <span>Please login to buy</span>
+                            @endif
                     </div>
                 </div>
                 <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
@@ -112,9 +120,13 @@
                         <p class="mt-1">Rs 5000</p>
                     </div>
                     <div>
-                        <button
+                        @if(auth()->check())
+                        <a href="{{route('Order')}}"
                             class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Buy
-                            Now</button>
+                            Now</a>
+                        @else
+                        <span>Please login to buy</span>
+                        @endif
                     </div>
                 </div>
                 <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
@@ -128,9 +140,13 @@
                         <p class="mt-1">Rs 4500</p>
                     </div>
                     <div>
-                        <button
+                        @if(auth()->check())
+                        <a href="{{route('Order')}}"
                             class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Buy
-                            Now</button>
+                            Now</a>
+                        @else
+                            <span>Please login to buy</span>
+                        @endif
                     </div>
                 </div>
             </div>

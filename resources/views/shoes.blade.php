@@ -14,9 +14,13 @@
             <h2 class="text-gray-900 title-font text-lg font-medium">Air Jordan 4 Retro "Orchid Women's"</h2>
             <p class="mt-1">Rs8000</p>
             <div>
-                <button
+                @if(auth()->check())
+                <a href="{{route('Order')}}"
                     class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Buy
-                    Now</button>
+                    Now</a>
+                    @else
+                    <span>Please login to buy</span>
+                    @endif
             </div>
           </div>
         </div>
@@ -29,9 +33,13 @@
             <h2 class="text-gray-900 title-font text-lg font-medium">Kid's Air Jordan 1 Low SE</h2>
             <p class="mt-1">Rs 5000</p>
             <div>
-                <button
-                    class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Buy
-                    Now</button>
+                @if(auth()->check())
+                        <a href="{{route('Order')}}"
+                            class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Buy
+                            Now</a>
+                            @else
+                            <span>Please login to buy</span>
+                            @endif
             </div>
           </div>
         </div>
@@ -44,9 +52,13 @@
             <h2 class="text-gray-900 title-font text-lg font-medium">Men's Jordan Spizike Low</h2>
             <p class="mt-1">Rs 6000</p>
             <div>
-                <button
-                    class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Buy
-                    Now</button>
+                @if(auth()->check())
+                        <a href="{{route('Order')}}"
+                            class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Buy
+                            Now</a>
+                            @else
+                            <span>Please login to buy</span>
+                            @endif
             </div>
           </div>
         </div>
@@ -59,9 +71,13 @@
             <h2 class="text-gray-900 title-font text-lg font-medium">Nike Air Jordan I</h2>
             <p class="mt-1">Rs 7000</p>
             <div>
-                <button
-                    class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Buy
-                    Now</button>
+                @if(auth()->check())
+                        <a href="{{route('Order')}}"
+                            class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Buy
+                            Now</a>
+                            @else
+                            <span>Please login to buy</span>
+                            @endif
             </div>
           </div>
         </div>
@@ -74,9 +90,13 @@
             <h2 class="text-gray-900 title-font text-lg font-medium">Jordan Tatum 3</h2>
             <p class="mt-1">Rs 7500</p>
             <div>
-                <button
+                @if(auth()->check())
+                <a href="{{route('Order')}}"
                     class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Buy
-                    Now</button>
+                    Now</a>
+                    @else
+                    <span>Please login to buy</span>
+                    @endif
             </div>
           </div>
         </div>
@@ -89,9 +109,13 @@
             <h2 class="text-gray-900 title-font text-lg font-medium">Jordan Jumpman MVP</h2>
             <p class="mt-1">Rs 6500</p>
             <div>
-                <button
-                    class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Buy
-                    Now</button>
+                @if(auth()->check())
+                        <a href="{{route('Order')}}"
+                            class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Buy
+                            Now</a>
+                            @else
+                            <span>Please login to buy</span>
+                            @endif
             </div>
           </div>
         </div>
@@ -104,9 +128,13 @@
             <h2 class="text-gray-900 title-font text-lg font-medium">Air Jordan 1 Low SE</h2>
             <p class="mt-1">Rs4000</p>
             <div>
-                <button
-                    class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Buy
-                    Now</button>
+                @if(auth()->check())
+                        <a href="{{route('Order')}}"
+                            class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Buy
+                            Now</a>
+                            @else
+                            <span>Please login to buy</span>
+                            @endif
             </div>
           </div>
         </div>
@@ -119,9 +147,13 @@
             <h2 class="text-gray-900 title-font text-lg font-medium">Air Jordan 6 Retro</h2>
             <p class="mt-1">Rs 7800</p>
             <div>
-                <button
-                    class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Buy
-                    Now</button>
+                @if(auth()->check())
+                        <a href="{{route('Order')}}"
+                            class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Buy
+                            Now</a>
+                            @else
+                            <span>Please login to buy</span>
+                            @endif
             </div>
           </div>
         </div>
