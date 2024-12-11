@@ -54,6 +54,7 @@ class OrderManager extends Controller
 
         // // Redirect with a success message
         // return redirect()->route('Order')->with('success', 'Order placed successfully!');
+
     }
     public function order_history()
     {
