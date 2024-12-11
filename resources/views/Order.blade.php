@@ -18,7 +18,7 @@
             <div class="alert alert-success">{{session('success')}}</div>
         @endif
 
-    <h1 class="text-3xl font-bold mb-4 mt-10">Register</h1>  
+    <h1 class="text-3xl font-bold mb-4 mt-10">Order Now</h1>  
 
     <form class="ml-10" action="{{route('Order.post')}}" method="POST">
         @csrf

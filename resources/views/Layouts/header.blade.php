@@ -16,7 +16,7 @@
         <div class="text-2xl flex flex-grow justify-center">
             <a href="{{ url('/home') }}"
                 class="px-10 not-italic hover:bg-black hover:text-white hover:h-10  transition-colors duration-300 rounded-md ">Home</a>
-            <a href="{{ url('/history') }}"
+            <a href="{{ route('order.history') }}"
                 class="px-10 not-italic hover:bg-black hover:text-white hover:h-10  transition-colors duration-300 rounded-md ">Orders</a>
             <a href=""
                 class="px-10 hover:bg-black hover:text-white hover:h-10  transition-colors duration-300 rounded-md">About</a>

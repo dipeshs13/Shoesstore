@@ -38,3 +38,4 @@ Route::get('/logout', [AuthManager::class, 'logout'])->name('logout');
 Route::get('/order',[OrderManager::class, 'order_page'])->name('Order');
 Route::post('/order',[OrderManager::class, 'submit_order'])->name('Order.post');
 Route::get('/shoes',[AuthManager::class, 'shoes_page'])->name('Shoes');
+Route::get('/history', [OrderManager::class, 'order_history'])->name('order.history');

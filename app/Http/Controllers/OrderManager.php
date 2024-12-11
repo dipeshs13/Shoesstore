@@ -13,6 +13,7 @@ class OrderManager extends Controller
     function order_page(){
         return view('Order');
     }
+
     public function submit_order(Request $request)
     {
         // Validate the form data
@@ -53,5 +54,12 @@ class OrderManager extends Controller
 
         // // Redirect with a success message
         // return redirect()->route('Order')->with('success', 'Order placed successfully!');
+    }
+    public function order_history()
+    {
+        // Fetch all orders for the logged-in user
+        // return $orders = Order::all();
+        $orders = Order::where('user_id', auth()->id())->get();
+        return view('History', compact('orders'));
     }
 }
