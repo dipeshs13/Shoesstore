@@ -77,7 +77,7 @@
                     <div class="mt-4">
                         {{-- <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3> --}}
                         <h2 class="text-gray-900 title-font text-lg font-medium">Air Jordan 3 Retro 'Cement Grey'</h2>
-                        <p class="mt-1">Rs 8000</p>
+                        <p class="mt-1">Rs 5000</p>
                     </div>
                     <div>
                         @if(auth()->check())
@@ -97,7 +97,7 @@
                     <div class="mt-4">
                         {{-- <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3> --}}
                         <h2 class="text-gray-900 title-font text-lg font-medium">Air Jordan Retro 1 High OG</h2>
-                        <p class="mt-1">Rs 6000</p>
+                        <p class="mt-1">Rs 5000</p>
                     </div>
                     <div>
                         @if(auth()->check())
@@ -135,9 +135,9 @@
                             src="{{ asset('images/shoes5.jpeg') }}">
                     </a>
                     <div class="mt-4">
-                        {{-- <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3> --}}
+                        {{-- <h3 class="text-gray-500 text-xs t racking-widest title-font mb-1">CATEGORY</h3> --}}
                         <h2 class="text-gray-900 title-font text-lg font-medium">Jordan 1 Mid RM</h2>
-                        <p class="mt-1">Rs 4500</p>
+                        <p class="mt-1">Rs 5000</p>
                     </div>
                     <div>
                         @if(auth()->check())

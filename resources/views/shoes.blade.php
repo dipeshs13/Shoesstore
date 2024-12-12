@@ -12,7 +12,7 @@
           </a>
           <div class="mt-4">
             <h2 class="text-gray-900 title-font text-lg font-medium">Air Jordan 4 Retro "Orchid Women's"</h2>
-            <p class="mt-1">Rs8000</p>
+            <p class="mt-1">Rs 5000</p>
             <div>
                 @if(auth()->check())
                 <a href="{{route('Order')}}"
@@ -50,7 +50,7 @@
           <div class="mt-4">
             {{-- <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3> --}}
             <h2 class="text-gray-900 title-font text-lg font-medium">Men's Jordan Spizike Low</h2>
-            <p class="mt-1">Rs 6000</p>
+            <p class="mt-1">Rs 5000</p>
             <div>
                 @if(auth()->check())
                         <a href="{{route('Order')}}"
@@ -69,7 +69,7 @@
           <div class="mt-4">
             {{-- <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3> --}}
             <h2 class="text-gray-900 title-font text-lg font-medium">Nike Air Jordan I</h2>
-            <p class="mt-1">Rs 7000</p>
+            <p class="mt-1">Rs 5000</p>
             <div>
                 @if(auth()->check())
                         <a href="{{route('Order')}}"
@@ -88,7 +88,7 @@
           <div class="mt-4">
             {{-- <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3> --}}
             <h2 class="text-gray-900 title-font text-lg font-medium">Jordan Tatum 3</h2>
-            <p class="mt-1">Rs 7500</p>
+            <p class="mt-1">Rs 5000</p>
             <div>
                 @if(auth()->check())
                 <a href="{{route('Order')}}"
@@ -107,7 +107,7 @@
           <div class="mt-4">
             {{-- <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3> --}}
             <h2 class="text-gray-900 title-font text-lg font-medium">Jordan Jumpman MVP</h2>
-            <p class="mt-1">Rs 6500</p>
+            <p class="mt-1">Rs 5000</p>
             <div>
                 @if(auth()->check())
                         <a href="{{route('Order')}}"
@@ -126,7 +126,7 @@
           <div class="mt-4">
             {{-- <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3> --}}
             <h2 class="text-gray-900 title-font text-lg font-medium">Air Jordan 1 Low SE</h2>
-            <p class="mt-1">Rs4000</p>
+            <p class="mt-1">Rs 5000</p>
             <div>
                 @if(auth()->check())
                         <a href="{{route('Order')}}"
@@ -145,7 +145,7 @@
           <div class="mt-4">
             {{-- <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3> --}}
             <h2 class="text-gray-900 title-font text-lg font-medium">Air Jordan 6 Retro</h2>
-            <p class="mt-1">Rs 7800</p>
+            <p class="mt-1">Rs 5000</p>
             <div>
                 @if(auth()->check())
                         <a href="{{route('Order')}}"
