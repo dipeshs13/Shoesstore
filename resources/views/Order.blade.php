@@ -3,13 +3,13 @@
     <title>Order</title>
 @endpush
 <div class="container mx-auto mt-10 px-4 py-8 flex justify-center">
-    @if($errors->any())
+    {{-- @if($errors->any())
             <div class="col-12">
                 @foreach ($errors->all() as $error)
                     <div class="alert alert-danger">{{$error}}</div>
                 @endforeach
             </div>
-        @endif
+        @endif --}}
 
         @if(session()->has('error'))
             <div class="alert alert-danger">{{session('error')}}</div>
@@ -30,6 +30,11 @@
             <input class="shadow  
 appearance-none border rounded w-80 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name"  type="text" name="name" placeholder="Enter  
 your name">
+<span class="text-red-500">
+    @error('name')
+        {{ $message }}
+    @enderror
+</span>
         </div>
         <div class="mb-4">
             <label class="block text-gray-700 text-sm font-bold mb-2" for="Address">
@@ -37,7 +42,11 @@ your name">
             </label>
             <input class="shadow  
 appearance-none border rounded w-80 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="address" type="text" name="address" placeholder="Enter your address">  
-
+<span class="text-red-500">
+    @error('address')
+        {{ $message }}
+    @enderror
+</span>
         </div>
         <div class="mb-4">
             <label class="block text-gray-700 text-sm font-bold mb-2" for="Shoes">
@@ -45,7 +54,11 @@ appearance-none border rounded w-80 py-2 px-3 text-gray-700 leading-tight focus:
             </label>
             <input class="shadow  
 appearance-none border rounded w-80 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="shoes" type="text" name="shoes" placeholder="Enter shoes name">  
-
+<span class="text-red-500">
+    @error('shoes')
+        {{ $message }}
+    @enderror
+</span>
         </div>
         <div class="mb-4">
             <label class="block text-gray-700 text-sm font-bold mb-2" for="Shoes">
@@ -53,7 +66,11 @@ appearance-none border rounded w-80 py-2 px-3 text-gray-700 leading-tight focus:
             </label>
             <input class="shadow  
 appearance-none border rounded w-80 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="shoessize" type="text" name="shoessize" placeholder="Enter shoes size">  
-
+<span class="text-red-500">
+    @error('shoessize')
+        {{ $message }}
+    @enderror
+</span>
         </div>
         <div class="mb-4">
             <label class="block text-gray-700 text-sm font-bold mb-2" for="Shoes">
@@ -61,7 +78,11 @@ appearance-none border rounded w-80 py-2 px-3 text-gray-700 leading-tight focus:
             </label>
             <input class="shadow  
 appearance-none border rounded w-80 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="phone_number" type="text" name="phone_number" placeholder="Enter phone number">  
-
+<span class="text-red-500">
+    @error('phone_number')
+        {{ $message }}
+    @enderror
+</span>
         </div>
         <div class="mb-4">
             <label class="block text-gray-700 text-sm font-bold mb-2">
@@ -70,11 +91,17 @@ appearance-none border rounded w-80 py-2 px-3 text-gray-700 leading-tight focus:
             <div class="flex items-center mb-2">
                 <input type="radio" id="cod" name="payment_method" value="cod" class="mr-2">
                 <label for="cod" class="text-gray-700">Cash on Delivery (COD)</label>
+
             </div>
             <div class="flex items-center">
                 <input type="radio" id="esewa" name="payment_method" value="esewa" class="mr-2">
                 <label for="esewa" class="text-gray-700">eSewa</label>
             </div>
+            <span class="text-red-500">
+                @error('payment_method')
+                    {{ $message }}
+                @enderror
+            </span>
         </div>
         <div class="mt-5">
             <button type="submit"

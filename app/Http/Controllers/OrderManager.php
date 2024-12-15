@@ -20,11 +20,11 @@ class OrderManager extends Controller
         // Validate the form data
         // dd($request->all());
         $request->validate([
-            'name' => 'required',
-            'address' => 'required',
-            'shoes' => 'required',
-            'shoessize' => 'required',
-            'phone_number' => 'required',
+            'name' => 'required|min:5',
+            'address' => 'required|min:5',
+            'shoes' => 'required|min:5',
+            'shoessize' => 'required|integer|between:32,43',
+            'phone_number' => 'required|integer|digits:10',
             'payment_method' => 'required|in:cod,esewa',
             'user_id' => 'required|exists:users,id',
         ]);
